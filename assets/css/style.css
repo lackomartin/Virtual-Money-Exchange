@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #dfe6e9;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    color: #3c4245;
+}
+
+a {
+    text-decoration: none;
+    color: #3c4245;
+}
+
+header {
+    display: block;
+    background-color: #fff;
+    height: 80px;
+    border-bottom: 1px solid #adbfc6;
+}
+
+.logo {
+    float: left;
+    line-height: 70px;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.user-nav {
+    float: right;
+    margin: 20px 30px;
+    text-align: right;
+}
+
+.user-nav p:nth-child(2) {
+    color: #a9b1b4;
+    font-size: 15px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+}
+
+.navigation-container {
+    display: inline-block;
+    position: relative;
+    width: 18%;
+    height: 89vh;
+    background-color: #fff;
+    border-right: 1px solid #adbfc6;
+}
+
+nav {
+    width: 100%;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #a9b1b4;
+    transition: 0.3s;
+}
+
+li:hover {
+    background-color: #dfe6e9;
+    color: #3c4245;
+    transition: 0.3s;
+}
+
+li.selected:hover {
+    background-color: #1dd1a1;
+    color: #fff;
+}
+
+.selected {
+    background-color: #1dd1a1;
+    color: #fff;
+}
+
+.logout {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    padding: 20px 0;
+}
+
+.logout p {
+    color: #a9b1b4;
+    transition: 0.3s;
+}
+
+.logout p:hover {
+    color: #3c4245;
+    transition: 0.3s;
+}
+
+.main-section {
+    display: inline-block;
+    margin: 15px 30px;
+    width: 78%;
+    height: 85vh;
+}
+
+/* LOGIN PAGE */
+.form-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px 0;
+    border-radius: 5px;
+    width: 22%;
+}
+
+.form-section h1 {
+    text-align: center;
+    color: #454545;
+    text-transform: uppercase;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.login-form input {
+    width: 80%;
+    height: 45px;
+    padding-left: 5px;
+    border: none;
+    margin: 5px 10%;
+    background-color: #e6e3e3;
+    border-radius: 2px;
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+.login-form p {
+    color: #000;
+    margin-left: 10%;
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.login-form a {
+    color: #000;
+    font-weight: 700;
+}
+
+.form-section button {
+    width: 80%;
+    margin: 25px 10%;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+    background-color: #1dd1a1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.form-section button:hover {
+    background-color: #138668;
+    transition: 0.3s;
+}
+
+.admin-panel-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 170px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    line-height: 40px;
+    background-color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.message {
+    color: #b02b21;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.back-btn {
+    margin: 20px;
+    font-weight: 500;
+    color: #3c4245;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    color: #a9b1b4;
+    transition: 0.3s;
+}
+
+.forbidden {
+    cursor: not-allowed;
+}
+
+.close-menu {
+    float: right;
+    color: #fff;
+    margin: 20px;
+}
+
+.author {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #1dd1a1;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width: 800px) {
+    .navigation-container {
+        display: none;
+    }
+
+    .main-section {
+        width: 95%;
+        margin: 2.5%;
+    }
+
+    .logo {
+        float: left;
+        line-height: 70px;
+        margin-left: 10px;
+        font-weight: 700;
+    }
+
+    .user-nav {
+        float: right;
+        margin: 20px 30px;
+        text-align: right;
+    }
+    
+    .user-nav p {
+        color: #a9b1b4;
+        font-size: 18px;
+        line-height: 35px;
+        color: #3c4245;
+    }
+
+    header {
+        display: block;
+        height: 110px;
+        position: relative;
+    }
+
+    .form-section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 15px 0;
+        border-radius: 5px;
+        width: 80%;
+    }
+
+    .author {
+        display: none;
+    }
+}

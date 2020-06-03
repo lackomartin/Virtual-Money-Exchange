@@ -1,0 +1,260 @@
+.users-container {
+    display: flex;
+    width: 100%;
+}
+
+.users-info-box {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-left: 20px;
+    height: 50vh;
+}
+
+.users {
+    display: block;
+    overflow-y: scroll;
+    height: 45vh;
+}
+
+.user {
+    display: flex;
+    width: 95%;
+    padding: 10px;
+}
+
+.user:nth-child(1) {
+    font-weight: 700;
+}
+
+.user:nth-child(2n) {
+    background-color: #f3f6f7;
+}
+
+.user p {
+    width: 130px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.show-info-btn {
+    width: 100px;
+    padding: 8px 0;
+    border: none;
+    cursor: pointer;
+    background-color: #1dd1a1;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.show-info-btn:hover {
+    background-color: #138668;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 47, 62, 0.75);
+    display: none;
+}
+
+
+.update-user-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 85vh;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.show {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  .close:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+.update-user-box h1 {
+    text-align: left;
+    margin: 30px 30px;
+    font-size: 18px;
+}
+
+.user-form {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.user-form input {
+    width: 100%;
+    height: 28px;
+    margin: 8px 0;
+    background-color: #f3f6f7;
+    border: none;
+    padding: 5px;
+}
+
+.user-form select {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.update-info-btn {
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 3px;
+    background-color: #1dd1a1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.update-info-btn:hover {
+    background-color: #138668;
+}
+
+.update-user-form {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.update-user-form input {
+    width: 100%;
+    height: 28px;
+    margin: 5px 0;
+    background-color: #f3f6f7;
+    border: none;
+    padding: 5px;
+}
+
+.update-user-form select {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.add-user-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    width: 35%;
+}
+
+/* USER PROFILE */
+.user-img {
+    text-align: center;
+    width: 150px;
+    margin: 30px 50px;
+    display: block;
+}
+
+.responsive-menu {
+    display: none;
+}
+  
+.responsive-menu-container {
+    display: none;
+}
+
+/* Responzive */
+@media (min-width: 300px) and (max-width: 800px) {
+    .users-container {
+        display: block;
+    }
+    
+    .add-user-box {
+        padding: 0px;
+        width: 100%;
+    }
+    
+    .users-info-box {
+        padding: 5px;
+        margin: 20px 0;
+        height: 50vh;
+        width: 95%;
+    }
+
+    .update-user-box {
+        width: 80%;
+        height: 85vh;
+    }
+
+    /* Responsive menu */
+    .responsive-menu {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        width: 10%;
+        left: 45%;
+    }
+
+    .responsive-menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #138668;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .show {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    li a{
+        color: #fff;
+    }
+}

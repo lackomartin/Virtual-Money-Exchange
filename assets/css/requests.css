@@ -1,0 +1,294 @@
+/* MY REQUESTS */ 
+.requests {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#request-h1 {
+    margin: 10px 15px
+}
+
+.my-requests-container {
+    width: 48%;
+    height: 42vh;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.onhold-container {
+    width: 48%;
+    height: 42vh;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.users-requests-container {
+    width: 60%;
+    height: 40vh;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+#request-box {
+    overflow-y: scroll;
+    height: 27vh;
+}
+
+.request {
+    width: 90%;
+    margin: 5px 2.5%;
+    padding: 8px 0;
+    display: flex;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.request:hover {
+    border: 1px solid #a9b1b4;
+}
+
+.request.first-of-type {
+    background-color: #a9b1b4;
+    color: #fff;
+}
+
+.request.first-of-type:hover {
+    border: none;
+    font-size: 18px;
+}
+
+.request p {
+    width: 130px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.recieved {
+    color: #1dd1a1;
+    font-weight: 700;
+}
+
+.rejected {
+    color: #ee5253;
+    font-weight: 700;
+}
+
+.accept {
+    width: 65px;
+    padding: 5px 0;
+    border: none;
+    background-color: #1dd1a1;
+    float: left;
+    color: #fff;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.accept:hover {
+    background-color: #159573;
+}
+
+.reject {
+    width: 65px;
+    padding: 5px 0;
+    border: none;
+    background-color: #ee5253;
+    float: right;
+    color: #fff;
+    cursor: pointer;
+}
+
+.reject:hover {
+    background-color: #d61516;
+}
+
+/* ALL REQUESTS */
+.filter-section {
+    display: flex;
+    width: 100%;
+}
+
+.filter-container {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.filter-form {
+    margin-top: 20px;
+}
+
+.filter-form select {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-form select:focus {
+    outline: none;
+}
+
+.submit-filter {
+    width: 120px;
+    height: 30px;
+    background-color: #1dd1a1;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    margin: 10px 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-filter:hover {
+    background-color: #138668;
+}
+
+.filter-form input {
+    width: 70%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    margin-top: 8px;
+    background-color: #f3f6f7;
+}
+
+.filter-form input:focus {
+    outline: none;
+}
+
+.total {
+    margin: 20px;
+}
+
+.total span {
+    font-weight: 700;
+    color: #1dd1a1;
+    font-size: 20px;
+}
+
+.total-container {
+    width: 35%; 
+    height: 50vh;
+}
+
+.responsive-menu {
+    display: none;
+}
+  
+.responsive-menu-container {
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  .close:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+/* Responzive */
+@media (min-width: 300px) and (max-width: 800px) {
+    .requests {
+        display: block;
+    }
+    
+    .my-requests-container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .onhold-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .users-requests-container {
+        width: 100%;
+    }
+
+    .filter-section {
+        display: block;
+    }
+    
+    .filter-container {
+        width: 90%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 3px;
+        margin: 0;
+    }
+
+    .filter-form {
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    /* Responsive menu */
+    .responsive-menu {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        width: 10%;
+        left: 45%;
+    }
+
+    .responsive-menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #138668;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .show {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    li a{
+        color: #fff;
+    }
+}

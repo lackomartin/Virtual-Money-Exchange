@@ -1,0 +1,254 @@
+.wallet-container {
+    height: auto;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+
+.my-wallet {
+    display: flex;
+}
+
+.wallet-container h1 {
+    margin: 15px 30px;
+}
+
+.my-amount {
+    width: 25%;
+    margin: 10px;
+    background-color: #f3f6f7;
+    font-size: 14px;
+    color: #a9b1b4;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.my-amount h2 {
+    font-size: 12px;
+    color: #3c4245;
+    margin-bottom: 3px;
+}
+
+.my-amount p {
+    margin-top: 3px;
+}
+
+.my-amount span {
+    float: right;
+    color: #3c4245;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.update-wallet {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #1dd1a1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+
+.update-wallet:hover {
+    background-color: #138668;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 47, 62, 0.75);
+    display: none;
+}
+
+.update-wallet-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 45vh;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.show {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  .close:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+.update-amount-form {
+    width: 40%;
+    margin: 50px 30%;
+    text-align: left;
+}
+
+.update-amount-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.update-amount-form select {
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+}
+
+.add-amount {
+    background-color: #fff;
+    width: 35%;
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 20px 40px;
+}
+
+.add-amount-form {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.add-amount-form input {
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    background-color: #f3f6f7;
+}
+
+.add-amount-form input:focus {
+    outline: none;
+}
+
+.add-amount-form select {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.add-amount-form select:focus {
+    outline: none;
+}
+
+.submit-amount {
+    width: 120px;
+    height: 30px;
+    background-color: #1dd1a1;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    margin: 10px 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit-amount:hover {
+    background-color: #138668;
+}
+
+.responsive-menu {
+    display: none;
+}
+  
+.responsive-menu-container {
+    display: none;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width: 800px) {
+    .my-wallet {
+        display: block;
+    }
+    
+    .my-amount {
+        width: 80%;
+        margin: 0 5%;
+        background-color: #f3f6f7;
+        font-size: 14px;
+        color: #a9b1b4;
+        padding: 20px;
+        padding-bottom: 50px;
+        border-radius: 3px;
+    }
+
+    .add-amount {
+        width: 80%;
+    }
+
+    .update-wallet-box {
+        width: 80%;
+        height: 45vh;
+    }
+    
+    /* Responsive menu */
+    .responsive-menu {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        width: 10%;
+        left: 45%;
+    }
+
+    .responsive-menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #138668;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .show {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    li a{
+        color: #fff;
+    }
+}

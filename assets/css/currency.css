@@ -1,0 +1,286 @@
+.currency-container {
+    display: flex;
+    width: 100%;
+}
+
+.add-currency-container {
+    background-color: #fff;
+    padding-top: 20px;
+    width: 40%;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.add-currency-container h1 {
+    margin-left: 30px;
+}
+
+.new-currency-form {
+    margin: 20px 30px;
+    width: 55%;
+}
+
+.new-currency-form input {
+    width: 100%;
+    height: 30px;
+    margin: 8px 0;
+    padding: 5px;
+    background-color: #f3f6f7;
+    border: none;
+    border-radius: 3px;
+}
+
+.new-currency-form select {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.add-currency {
+    width: 150px;
+    height: 40px;
+    background-color: #1dd1a1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.add-currency:hover {
+    background-color: #138668;
+}
+
+.currency-box {
+    width: 50%;
+    margin-left: 20px;
+    background-color: #fff;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.curr-box {
+    display: block;
+    overflow-y: scroll;
+    height: 35vh;
+}
+
+.currency {
+    display: flex;
+    width: 95%;
+    margin: 5px 2.5%;
+    padding: 8px 0;
+}
+
+.currency:nth-child(2n) {
+    background-color: #f3f6f7;
+}
+
+.currency p {
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.currency p:nth-child(2) {
+    width: 50px;
+    text-align: right;
+}
+
+.currency p:nth-child(3) {
+    text-align: right;
+}
+
+.currency:nth-child(1) p:nth-child(3) {
+    text-align: center;
+}
+
+.currency:nth-child(1) {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.update-currency-btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #1dd1a1;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.update-currency-btn:hover {
+    background-color: #138668;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 47, 62, 0.75);
+    display: none;
+}
+
+.update-currency-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 95vh;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.show {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+  .close:hover {
+    opacity: 1;
+    transition: 0.3s;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+.update-currency-box h1 {
+    text-align: left;
+    margin: 20px 30px;
+    font-size: 18px;
+}
+
+.update-currency-form {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 25%;
+    text-align: left;
+}
+
+.update-currency-form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: #f3f6f7;
+    border: none;
+    padding: 5px;
+}
+
+.update-currency-form select {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.responsive-menu {
+    display: none;
+}
+  
+.responsive-menu-container {
+    display: none;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width: 900px) {
+    .currency-container {
+        display: block;
+    }
+    
+    .add-currency-container {
+        padding: 20px 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .new-currency-form {
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    .currency-box {
+        width: 100%;
+        margin: 0;
+        background-color: #fff;
+        height: 40vh;
+        padding: 3px;
+        border-radius: 3px;
+    }
+
+    .currency {
+        display: flex;
+        width: 100%;
+        margin: 5px 0%;
+        padding: 3px 0;
+    }
+
+    .update-currency-box {
+        width: 80%;
+        height: 95vh;
+    }
+
+    /* Responsive menu */
+    .responsive-menu {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        width: 10%;
+        left: 45%;
+    }
+
+    .responsive-menu-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: #138668;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .show {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+    }
+
+    li a{
+        color: #fff;
+    }
+}
